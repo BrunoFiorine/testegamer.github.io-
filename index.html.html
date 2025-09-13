@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Aula 03/static/css/styles.css"> 
+    
+    <title>Games Rêtro RJ</title>
+</head>
+<body>
+    
+    <header>
+        <h1 style="font-size: 100px;">Sua loja gamer preferida!</h1>
+        <p><strong>Escolha o seu console preferido:</strong></p> 
+
+        <nav>
+            <a href="home.html">Home</a> 
+            <a href="produtos.html">Produtos</a> 
+            
+        </nav>
+
+
+    </header>
+
+    <main>  
+        <section>
+            <h13>Consoles</h13>
+            <div style="display: flex; justify-content: center; gap: 60px; text-align: center;">
+                <p>
+                    <strong>Atari</strong><br>
+                    <img src="Aula 03/static/img/atari.png" alt="Console Atari" width="150" height="150">
+                </p>
+                <p>
+                    <strong>Mega Drive</strong><br>
+                    <img src="Aula 03/static/img/megadrive3.png" alt="Console Mega Drive 3" width="150" height="150">
+                </p>
+                <p>
+                    <strong>Nes</strong><br>
+                    <img src="Aula 03/static/img/nes.png" alt="Console NES" width="150" height="150">
+                </p>
+                <p>
+                    <strong>Snes</strong><br>
+                    <img src="Aula 03/static/img/snes.png" alt="Console SNES" width="150" height="150">
+                </p>
+                <p>
+                    <strong>Sega Saturno</strong><br>
+                    <img src="Aula 03/static/img/segasaturno.png" alt="Console Sega Saturno" width="150" height="150">
+                </p>
+            </div>
+        </section>
+ 
+        <section>
+            <h2>Principais Atividades</h2>
+            <article>
+                <h3>Vendas de Consoles e Jogos Clássicos</h3>
+            </article>
+        </section>
+ 
+        <div>
+            <h14>Nossa Missão</h14>
+            <h4>Trazer os anos 90 de volta pra sua casa.</h4>
+        </div>
+        
+        <h17 style="margin-left: 55px;">Clique no botão abaixo e veja as raridades que só nós temos!</h17>
+        <button>Clique aqui</button>
+        
+        <h2>Promoção Relâmpago!</h2>
+        <table class="tabeladeprecos">
+            <thead>
+                <tr> 
+                    <th>Console</th>
+                    <th>Jogo</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sega Saturno</td>
+                    <td>Sonic CD</td>
+                    <td>R$ 250,00</td>
+                </tr>
+                <tr>
+                    <td>Super Nintendo</td>
+                    <td>Megaman X</td>
+                    <td>R$ 350,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="form-container">
+            <h15>Cadastro</h15>
+            <h3>Nos conte a sua dúvida!</h3>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input 
+                        type="tel" 
+                        id="telefone" 
+                        name="telefone" 
+                        placeholder="(99) 99999-9999"
+                        pattern="^\(\d{2}\) \d{5}-\d{4}$"
+                        title="Formato: (99) 99999-9999"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Escolha uma opção</option>
+                        <option value="duvida">Dúvida sobre um pedido</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="contato">Fale Conosco</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <div style="text-align: left; margin-top: 30px;">
+            <audio controls>
+                <source src="../Aula 03/static/audio/bensound-stylishcar.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+
+        <div style="text-align: left;">
+            <video width="600" height="590" controls>
+                <source src="../Aula 03/static/video/Jogandosnes.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+
+        <p><strong>Clique no link abaixo para saber a nossa localização:</strong></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.8449446701516!2d-43.25707012294581!3d-22.91908927924638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997de07d73376d%3A0x64635f74e5b97863!2sR.%20Teodoro%20da%20Silva%2C%20796%20-%20Vila%20Isabel%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020560-025!5e0!3m2!1spt-BR!2sbr!4v1757115873502!5m2!1spt-BR!2sbr" 
+            width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </main>
+
+    <footer>
+        <h16>&copy; Desde 2025 - Atuando no setor gamer nacional.</h16>
+    </footer>
+</body>
+</html>
