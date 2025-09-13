@@ -24,14 +24,14 @@
         }
     
 
-        nav a {
+    nav a {
             background-color: #2427e2;
             color: #f8f8fa;
             font-size: 50px;
-            display: inline-block; /* permite centralizar */
-            margin: 0 20px;        /* espaçamento entre os links */
-            text-decoration: none; /* tira sublinhado */
+            margin-left: 500px;
+            
         }
+
 
 
 
